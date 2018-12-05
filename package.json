@@ -5,7 +5,13 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "dev": "react-native run-ios --simulator=\"iPhone 7\" && open \"rndebugger://set-debugger-loc?host=localhost&port=8081\"",
-    "test": "jest"
+    "test": "jest",
+    "clean:all": "yarn clean:cache && yarn clean:builds && yarn clean:dependencies",
+    "clean:cache": "rm -rf $TMPDIR/react-*; rm -rf $TMPDIR/haste-*; rm -rf $TMPDIR/metro-*; watchman watch-del-all",
+    "clean:build:android": "rm -rf ./android/build; rm -rf ./android/.gradle",
+    "clean:build:ios": "rm -rf ./ios/build",
+    "clean:builds": "yarn clean:build:android && yarn clean:build:ios",
+    "clean:dependencies": "rm -rf ./node_modules; rm yarn.lock"
   },
   "dependencies": {
     "react": "16.6.1",
