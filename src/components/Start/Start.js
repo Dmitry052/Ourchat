@@ -13,7 +13,7 @@ class Start extends React.Component {
   render() {
     return (
       <View style={style.main}>
-        <Image source={require("./../../../img/mess1.png")} />
+        <Image source={require("./../../../img/loading.png")} />
       </View>
     );
   }

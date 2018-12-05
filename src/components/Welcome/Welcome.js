@@ -1,5 +1,6 @@
 import React from "react";
-import { View, Text, Button } from "react-native";
+import { View, Image } from "react-native";
+import { Button, Text } from "react-native-elements";
 import style from "./style";
 
 class Welcome extends React.Component {
@@ -12,11 +13,19 @@ class Welcome extends React.Component {
   render() {
     return (
       <View style={style.main}>
-        <Text>Welcome</Text>
-        <Button
-          title="Go to Register"
-          onPress={() => this.props.navigation.navigate("Register")}
-        />
+        <View style={style.logo}>
+          <Image source={require("./../../../img/logo.png")} />
+        </View>
+
+        <View style={style.code}>
+          <Button
+            large
+            buttonStyle={style.btn}
+            title={<Text h4>Start</Text>}
+            icon={{ name: "fingerprint" }}
+            onPress={() => this.props.navigation.navigate("Register")}
+          />
+        </View>
       </View>
     );
   }
