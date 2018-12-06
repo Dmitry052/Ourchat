@@ -50,7 +50,7 @@ class Register extends React.Component {
           <Button
             title="Next"
             buttonStyle={style.btn}
-            onPress={() => this.props.navigation.navigate("Welcome")}
+            onPress={() => this.props.navigation.navigate("Main")}
           />
         </View>
       </View>

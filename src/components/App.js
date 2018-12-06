@@ -4,6 +4,7 @@ import { View, Text, Button } from "react-native";
 import Start from "./Start/Start";
 import Welcome from "./Welcome/Welcome";
 import Register from "./Register/Register";
+import Main from "./Main/Main";
 
 const AppNavigator = createStackNavigator({
   Start: {
@@ -14,6 +15,9 @@ const AppNavigator = createStackNavigator({
   },
   Register: {
     screen: Register
+  },
+  Main: {
+    screen: Main
   }
 });
 

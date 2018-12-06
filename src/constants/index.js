@@ -1,0 +1,1 @@
+export const SWITCH_ACTIVE_LIST = "SWITCH_ACTIVE_LIST";
