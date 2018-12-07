@@ -1,7 +1,9 @@
-import { SWITCH_ACTIVE_LIST } from "./../constants";
+import { SWITCH_ACTIVE_LIST, SHOW_MENU, SHOW_SETTINGS } from "./../constants";
 
 const initialState = {
   activeList: "chats",
+  showMenu: false,
+  showSettings: false,
   chats: [
     {
       id: 0,
@@ -92,6 +94,12 @@ export default function user(state = initialState, action) {
   switch (action.type) {
     case SWITCH_ACTIVE_LIST: {
       return { ...state, activeList: action.data };
+    }
+    case SHOW_MENU: {
+      return { ...state, showMenu: action.data };
+    }
+    case SHOW_SETTINGS: {
+      return { ...state, showSettings: action.data };
     }
     default:
       return { ...state };

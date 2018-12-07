@@ -20,10 +20,12 @@ class Register extends React.Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <View style={style.main}>
-        <Image style={style.topImage} source={require("./../../../img/mess.png")} />
+        <Image
+          style={style.topImage}
+          source={require("./../../../img/mess.png")}
+        />
         <View style={style.title}>
           <Text style={style.titleText}>Registration</Text>
         </View>

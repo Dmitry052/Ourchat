@@ -4,10 +4,16 @@ import { View, Text } from "react-native";
 import { Button } from "react-native-elements";
 import style from "./style";
 
+import Menu from "./Menu/Menu";
+import Settings from "./Settings/Settings";
 import Header from "./Header/Header";
 import Users from "./Users/Users";
 import Chats from "./Chats/Chats";
-import { setActiveList } from "./../../actions/main";
+import {
+  setActiveList,
+  switchShowMenu,
+  switchShowSettings
+} from "./../../actions/main";
 
 class Main extends React.Component {
   static navigationOptions = ({ navigation }) => {
@@ -24,11 +30,29 @@ class Main extends React.Component {
     this.props.setActiveList("chats");
   };
 
+  handleOpenMenu = () => {
+    this.props.switchShowMenu(!this.props.showMenu);
+  };
+  handleOpenSettings = () => {
+    this.props.switchShowSettings(!this.props.showSettings);
+  };
+
   render() {
     const activeList = this.props.activeList === "users";
+    const { showMenu, showSettings } = this.props;
+
     return (
       <View style={style.main}>
-        <Header />
+        <Header
+          handleOpenMenu={this.handleOpenMenu}
+          handleOpenSettings={this.handleOpenSettings}
+        />
+
+        {showMenu ? <Menu handleOpenMenu={this.handleOpenMenu} /> : null}
+
+        {showSettings ? (
+          <Settings handleOpenSettings={this.handleOpenSettings} />
+        ) : null}
 
         <View style={style.switcher}>
           <View style={style.switchContainer}>
@@ -67,10 +91,12 @@ class Main extends React.Component {
 const mapStateToProps = state => ({
   activeList: state.main.activeList,
   users: state.main.users,
-  chats: state.main.chats
+  chats: state.main.chats,
+  showMenu: state.main.showMenu,
+  showSettings: state.main.showSettings
 });
 
 export default connect(
   mapStateToProps,
-  { setActiveList }
+  { setActiveList, switchShowMenu, switchShowSettings }
 )(Main);

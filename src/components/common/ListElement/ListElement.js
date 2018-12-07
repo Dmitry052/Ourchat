@@ -6,7 +6,7 @@ import style from "./style";
 class ListElement extends React.Component {
   render() {
     const { photo } = this.props;
-    console.log("photo", photo);
+
     return (
       <View style={style.main}>
         <View style={style.logo}>

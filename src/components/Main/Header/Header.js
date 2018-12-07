@@ -12,7 +12,7 @@ class Header extends React.Component {
             title=""
             icon={{ name: "align-justify", type: "font-awesome" }}
             buttonStyle={style.menuBtn}
-            onPress={() => {}}
+            onPress={this.props.handleOpenMenu}
           />
         </View>
 
@@ -28,7 +28,7 @@ class Header extends React.Component {
             title=""
             icon={{ name: "cog", type: "font-awesome" }}
             buttonStyle={style.settingBtn}
-            onPress={() => {}}
+            onPress={this.props.handleOpenSettings}
           />
         </View>
       </View>
