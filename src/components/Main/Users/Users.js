@@ -5,13 +5,17 @@ import ListElement from "./../../common/ListElement/ListElement";
 
 class Users extends React.Component {
   render() {
-    const { users, children } = this.props;
+    const { users, children, onPress } = this.props;
 
     return (
       <View style={style.main}>
         <ScrollView>
           {users.map(user => (
-            <ListElement key={`user-${user.id}`} photo={user.photo}>
+            <ListElement
+              key={`user-${user.id}`}
+              photo={user.photo}
+              onPress={onPress}
+            >
               <View style={style.info}>
                 <View style={style.titleBlock}>
                   <Text style={style.title}>{`First name:`}</Text>

@@ -11,6 +11,8 @@ import App from "./src/components/App";
 import { name as appName } from "./app.json";
 import reducers from "./src/reducers";
 
+import { setExpandable } from "react-native-today-widget";
+
 const store = createStore(
   reducers,
   composeWithDevTools(applyMiddleware(thunk))

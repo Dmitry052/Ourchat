@@ -43,6 +43,7 @@
 		3295E750139D4B6BAF23854E /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB9E881DA67146BA8B859156 /* Ionicons.ttf */; };
 		3CDB4C24C834497AA2BBEED8 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA4BE93AEE484936A1D1E2CE /* MaterialCommunityIcons.ttf */; };
 		3ED064AA1B404BD991FFE268 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 099260E76E5B4DFEAA5002C4 /* FontAwesome5_Solid.ttf */; };
+		6E8865097E91467B9A4F5E90 /* TodayWidgetExtension.appex in Frameworks */ = {isa = PBXBuildFile; fileRef = 7982FB2CA5E64E5EA832E80B /* TodayWidgetExtension.appex */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		844F60412EEE4D239A81B3BE /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBB4C0DD044E4E358DDE76FD /* Octicons.ttf */; };
 		8D08B1E927B34079A574B3B5 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 982E8A1958F440639348198B /* EvilIcons.ttf */; };
@@ -56,6 +57,10 @@
 		E06D8AC408234CB3BE1F4907 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A31F4299FDD461DA6BCADCE /* libRNVectorIcons.a */; };
 		E5E89BA677624F5693F32344 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6997620F875146E6892DBA77 /* SimpleLineIcons.ttf */; };
 		EE5617F823CA44A7A435759B /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66E3D9F7BE044E2AA7EDDA05 /* FontAwesome5_Brands.ttf */; };
+		FBFD2F4821BA930F000F0834 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFD2F4721BA930F000F0834 /* NotificationCenter.framework */; };
+		FBFD2F4B21BA930F000F0834 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD2F4A21BA930F000F0834 /* TodayViewController.swift */; };
+		FBFD2F4E21BA930F000F0834 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFD2F4C21BA930F000F0834 /* MainInterface.storyboard */; };
+		FBFD2F5221BA930F000F0834 /* Mywidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FBFD2F4621BA930E000F0834 /* Mywidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -353,7 +358,28 @@
 			remoteGlobalIDString = A39873CE1EA65EE60051E01A;
 			remoteInfo = "RNVectorIcons-tvOS";
 		};
+		FBFD2F5021BA930F000F0834 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBFD2F4521BA930E000F0834;
+			remoteInfo = Mywidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D86A1B52D6C0434101FC332B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FBFD2F5221BA930F000F0834 /* Mywidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -389,6 +415,7 @@
 		6997620F875146E6892DBA77 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		6F229E70267844B8B09A3B89 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		7982FB2CA5E64E5EA832E80B /* TodayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = TodayWidgetExtension.appex; sourceTree = "<group>"; };
 		7A31F4299FDD461DA6BCADCE /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 		7AF73C83467B4E4682B82093 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		82CE4DA714F1406E8335D8AF /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
@@ -401,6 +428,11 @@
 		E57C9F89B35D465BA1481403 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		E9A38B54519A4D429D8AB90B /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		FB9E881DA67146BA8B859156 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		FBFD2F4621BA930E000F0834 /* Mywidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Mywidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBFD2F4721BA930F000F0834 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		FBFD2F4A21BA930F000F0834 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		FBFD2F4D21BA930F000F0834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FBFD2F4F21BA930F000F0834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD4165AE2CB740428AF48211 /* libRNVectorIcons-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNVectorIcons-tvOS.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -431,6 +463,7 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				B12F8C01555042BB88892F2C /* libRNGestureHandler.a in Frameworks */,
 				E06D8AC408234CB3BE1F4907 /* libRNVectorIcons.a in Frameworks */,
+				6E8865097E91467B9A4F5E90 /* TodayWidgetExtension.appex in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +488,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFD2F4321BA930E000F0834 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFD2F4821BA930F000F0834 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +622,7 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				FBFD2F4721BA930F000F0834 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -661,6 +703,7 @@
 				13B07FAE1A68108700A75B9A /* Ourchat */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* OurchatTests */,
+				FBFD2F4921BA930F000F0834 /* Mywidget */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				5BFABF71858C44F7AB74D857 /* Resources */,
@@ -678,6 +721,7 @@
 				00E356EE1AD99517003FC87E /* OurchatTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* Ourchat-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* Ourchat-tvOSTests.xctest */,
+				FBFD2F4621BA930E000F0834 /* Mywidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -697,6 +741,7 @@
 				5F8025A81C014854AFF2BC76 /* libRNGestureHandler.a */,
 				7A31F4299FDD461DA6BCADCE /* libRNVectorIcons.a */,
 				FD4165AE2CB740428AF48211 /* libRNVectorIcons-tvOS.a */,
+				7982FB2CA5E64E5EA832E80B /* TodayWidgetExtension.appex */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -716,6 +761,16 @@
 				FB28517521B963F0002923EA /* libRNVectorIcons-tvOS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FBFD2F4921BA930F000F0834 /* Mywidget */ = {
+			isa = PBXGroup;
+			children = (
+				FBFD2F4A21BA930F000F0834 /* TodayViewController.swift */,
+				FBFD2F4C21BA930F000F0834 /* MainInterface.storyboard */,
+				FBFD2F4F21BA930F000F0834 /* Info.plist */,
+			);
+			path = Mywidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -747,10 +802,12 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				D86A1B52D6C0434101FC332B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FBFD2F5121BA930F000F0834 /* PBXTargetDependency */,
 			);
 			name = Ourchat;
 			productName = "Hello World";
@@ -793,12 +850,30 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* Ourchat-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		FBFD2F4521BA930E000F0834 /* Mywidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBFD2F5321BA930F000F0834 /* Build configuration list for PBXNativeTarget "Mywidget" */;
+			buildPhases = (
+				FBFD2F4221BA930E000F0834 /* Sources */,
+				FBFD2F4321BA930E000F0834 /* Frameworks */,
+				FBFD2F4421BA930E000F0834 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mywidget;
+			productName = Mywidget;
+			productReference = FBFD2F4621BA930E000F0834 /* Mywidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
@@ -818,6 +893,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+					FBFD2F4521BA930E000F0834 = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = R9M86DGBNA;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -896,6 +976,7 @@
 				00E356ED1AD99517003FC87E /* OurchatTests */,
 				2D02E47A1E0B4A5D006451C7 /* Ourchat-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* Ourchat-tvOSTests */,
+				FBFD2F4521BA930E000F0834 /* Mywidget */,
 			);
 		};
 /* End PBXProject section */
@@ -1230,6 +1311,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBFD2F4421BA930E000F0834 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFD2F4E21BA930F000F0834 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1298,6 +1387,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBFD2F4221BA930E000F0834 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFD2F4B21BA930F000F0834 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1311,6 +1408,11 @@
 			target = 2D02E47A1E0B4A5D006451C7 /* Ourchat-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
+		FBFD2F5121BA930F000F0834 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBFD2F4521BA930E000F0834 /* Mywidget */;
+			targetProxy = FBFD2F5021BA930F000F0834 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1321,6 +1423,14 @@
 			);
 			name = LaunchScreen.xib;
 			path = Ourchat;
+			sourceTree = "<group>";
+		};
+		FBFD2F4C21BA930F000F0834 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBFD2F4D21BA930F000F0834 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1338,12 +1448,14 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-today-widget/ios/TodayWidgetExtension",
 				);
 				INFOPLIST_FILE = OurchatTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1367,12 +1479,14 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-today-widget/ios/TodayWidgetExtension",
 				);
 				INFOPLIST_FILE = OurchatTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1390,6 +1504,7 @@
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -1400,6 +1515,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-today-widget/ios/TodayWidgetExtension",
 				);
 				INFOPLIST_FILE = Ourchat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1419,6 +1535,7 @@
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -1428,6 +1545,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-today-widget/ios/TodayWidgetExtension",
 				);
 				INFOPLIST_FILE = Ourchat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1460,11 +1578,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-today-widget/ios/TodayWidgetExtension",
 				);
 				INFOPLIST_FILE = "Ourchat-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1497,11 +1617,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-today-widget/ios/TodayWidgetExtension",
 				);
 				INFOPLIST_FILE = "Ourchat-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1533,11 +1655,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-today-widget/ios/TodayWidgetExtension",
 				);
 				INFOPLIST_FILE = "Ourchat-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1569,11 +1693,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-today-widget/ios/TodayWidgetExtension",
 				);
 				INFOPLIST_FILE = "Ourchat-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1689,6 +1815,65 @@
 			};
 			name = Release;
 		};
+		FBFD2F5421BA930F000F0834 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = R9M86DGBNA;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Mywidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.Ourchat.Mywidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBFD2F5521BA930F000F0834 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = R9M86DGBNA;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Mywidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.Ourchat.Mywidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1733,6 +1918,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBFD2F5321BA930F000F0834 /* Build configuration list for PBXNativeTarget "Mywidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBFD2F5421BA930F000F0834 /* Debug */,
+				FBFD2F5521BA930F000F0834 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

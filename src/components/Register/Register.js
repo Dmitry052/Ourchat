@@ -5,20 +5,6 @@ import { Button } from "react-native-elements";
 import style from "./style";
 
 class Register extends React.Component {
-  static navigationOptions = ({ navigation }) => {
-    return {
-      headerLeft: null
-    };
-  };
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      text1: "",
-      text2: ""
-    };
-  }
-
   render() {
     return (
       <View style={style.main}>
@@ -35,7 +21,7 @@ class Register extends React.Component {
           <TextInput
             style={style.phoneInput}
             placeholder="+79607770000"
-            onChangeText={text => this.setState({ text1: text })}
+            onChangeText={() => {}}
           />
         </View>
 
@@ -44,7 +30,7 @@ class Register extends React.Component {
           <TextInput
             style={style.codeInput}
             placeholder="code"
-            onChangeText={text => this.setState({ text2: text })}
+            onChangeText={() => {}}
           />
         </View>
 

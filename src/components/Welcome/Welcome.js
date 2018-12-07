@@ -4,12 +4,6 @@ import { Button, Text } from "react-native-elements";
 import style from "./style";
 
 class Welcome extends React.Component {
-  static navigationOptions = ({ navigation }) => {
-    return {
-      headerLeft: null
-    };
-  };
-
   render() {
     return (
       <View style={style.main}>
@@ -20,8 +14,12 @@ class Welcome extends React.Component {
         <View style={style.code}>
           <Button
             large
+            fontSize={36}
             buttonStyle={style.btn}
-            title={<Text h4>Start</Text>}
+            title="Start"
+            titleStyle={{
+              fontSize: 26
+            }}
             icon={{ name: "fingerprint" }}
             onPress={() => this.props.navigation.navigate("Register")}
           />

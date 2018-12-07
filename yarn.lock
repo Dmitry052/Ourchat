@@ -4796,6 +4796,11 @@ react-native-tab-view@^1.0.0, react-native-tab-view@^1.2.0:
   dependencies:
     prop-types "^15.6.1"
 
+react-native-today-widget@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-today-widget/-/react-native-today-widget-1.0.0.tgz#2547494c497aa7163b3a40a66937879be4b5412c"
+  integrity sha512-ZtxNcaDNSnKcv0NJNUhWlZSdzm6cHlvYi6emYxb/e1kyZgC7vBugR4S9Rm5HEOcsN+MEcBEaBIWSzJGJjRddkQ==
+
 react-native-vector-icons@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/react-native-vector-icons/-/react-native-vector-icons-6.1.0.tgz#770a3f8ced692d75deb3afbb9829195ceed1eedd"

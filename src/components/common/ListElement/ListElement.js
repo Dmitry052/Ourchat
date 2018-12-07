@@ -5,7 +5,7 @@ import style from "./style";
 
 class ListElement extends React.Component {
   render() {
-    const { photo } = this.props;
+    const { photo, onPress } = this.props;
 
     return (
       <View style={style.main}>
@@ -27,7 +27,7 @@ class ListElement extends React.Component {
             title=""
             icon={{ name: "paper-plane", type: "font-awesome" }}
             buttonStyle={style.startBtn}
-            onPress={() => {}}
+            onPress={onPress}
           />
         </View>
       </View>

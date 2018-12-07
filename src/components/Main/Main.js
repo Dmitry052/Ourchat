@@ -16,12 +16,6 @@ import {
 } from "./../../actions/main";
 
 class Main extends React.Component {
-  static navigationOptions = ({ navigation }) => {
-    return {
-      headerLeft: null
-    };
-  };
-
   handleSwitchUsers = () => {
     this.props.setActiveList("users");
   };
@@ -31,10 +25,17 @@ class Main extends React.Component {
   };
 
   handleOpenMenu = () => {
+    // this.props.navigation.navigate("Menu");
+
     this.props.switchShowMenu(!this.props.showMenu);
   };
   handleOpenSettings = () => {
+    // this.props.navigation.navigate("Settings");
     this.props.switchShowSettings(!this.props.showSettings);
+  };
+
+  handleNavigateToChat = () => {
+    this.props.navigation.navigate("Chat");
   };
 
   render() {
@@ -79,9 +80,9 @@ class Main extends React.Component {
         </View>
 
         {activeList ? (
-          <Users users={this.props.users} />
+          <Users users={this.props.users} onPress={this.handleNavigateToChat} />
         ) : (
-          <Chats chats={this.props.chats} />
+          <Chats chats={this.props.chats} onPress={this.handleNavigateToChat} />
         )}
       </View>
     );
