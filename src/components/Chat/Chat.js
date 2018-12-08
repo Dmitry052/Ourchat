@@ -23,7 +23,32 @@ class Chat extends React.Component {
             data={this.props.dataChat}
             keyExtractor={this.keyExtractor}
             renderItem={({ item }) => (
-              <Text style={style.chattext}>{`- ${item.text}`}</Text>
+              <View
+                style={
+                  item.type === "i"
+                    ? {
+                        ...style.containerChatText,
+                        ...style.rightText
+                      }
+                    : style.containerChatText
+                }
+              >
+                <View
+                  style={
+                    item.type === "i"
+                      ? { ...style.locationChatText, ...style.rightColor }
+                      : style.locationChatText
+                  }
+                >
+                  <Text
+                    style={
+                      item.type === "i"
+                        ? { ...style.chattext, ...style.rightChattext }
+                        : style.chattext
+                    }
+                  >{`${item.message}`}</Text>
+                </View>
+              </View>
             )}
           />
         </View>

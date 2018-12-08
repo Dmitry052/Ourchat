@@ -23,17 +23,35 @@ export default StyleSheet.create({
   messages: {
     flex: 10,
     ...commonMargin,
-    ...commonBorder,
-    backgroundColor: "#e5e5e55c",
-    flexDirection: "row",
-    alignItems: "flex-end",
-    overflow: "scroll"
+    ...commonBorder
   },
-
+  containerChatText: {
+    ...commonMargin
+  },
+  rightText: {
+    alignItems: "flex-end"
+  },
+  rightColor: {
+    backgroundColor: "#00a3dc"
+  },
+  locationChatText: {
+    borderBottomWidth: 1,
+    borderTopWidth: 1,
+    borderLeftWidth: 1,
+    borderRightWidth: 1,
+    borderColor: "#d2d0d0",
+    borderRadius: 9,
+    backgroundColor: "#fafafa",
+    width: "50%"
+  },
   chattext: {
     // backgroundColor: "yellow",
     ...commonMargin
   },
+  rightChattext: {
+    color: "#fff"
+  },
+  // *****************************
   inputBlock: {
     flex: 1,
     flexDirection: "row",
