@@ -23,7 +23,7 @@ export default StyleSheet.create({
   messages: {
     flex: 10,
     ...commonMargin,
-    ...commonBorder
+    // ...commonBorder
   },
   containerChatText: {
     ...commonMargin
@@ -65,5 +65,5 @@ export default StyleSheet.create({
     flexBasis: "20%"
     //  backgroundColor: "cyan"
   },
-  btn: { height: "100%" }
+  btn: { height: "100%", borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }
 });
