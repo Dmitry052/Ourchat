@@ -57,10 +57,24 @@
 		E06D8AC408234CB3BE1F4907 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A31F4299FDD461DA6BCADCE /* libRNVectorIcons.a */; };
 		E5E89BA677624F5693F32344 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6997620F875146E6892DBA77 /* SimpleLineIcons.ttf */; };
 		EE5617F823CA44A7A435759B /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66E3D9F7BE044E2AA7EDDA05 /* FontAwesome5_Brands.ttf */; };
-		FBFD2F4821BA930F000F0834 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFD2F4721BA930F000F0834 /* NotificationCenter.framework */; };
-		FBFD2F4B21BA930F000F0834 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD2F4A21BA930F000F0834 /* TodayViewController.swift */; };
-		FBFD2F4E21BA930F000F0834 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFD2F4C21BA930F000F0834 /* MainInterface.storyboard */; };
-		FBFD2F5221BA930F000F0834 /* Mywidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FBFD2F4621BA930E000F0834 /* Mywidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FB7495B221C10417005F2750 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFD2F4721BA930F000F0834 /* NotificationCenter.framework */; };
+		FB7495B521C10417005F2750 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7495B421C10417005F2750 /* TodayViewController.swift */; };
+		FB7495B821C10417005F2750 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7495B621C10417005F2750 /* MainInterface.storyboard */; };
+		FB7495BC21C10417005F2750 /* OurWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FB7495B121C10417005F2750 /* OurWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FB7495C121C10557005F2750 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
+		FB7495C221C10561005F2750 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
+		FB7495C321C10568005F2750 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
+		FB7495C421C1056D005F2750 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		FB7495C521C10574005F2750 /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
+		FB7495C621C1057A005F2750 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
+		FB7495C721C10580005F2750 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
+		FB7495C821C10586005F2750 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
+		FB7495C921C1058C005F2750 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
+		FB7495CA21C10594005F2750 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		FB7495CB21C1059D005F2750 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		FB7495CD21C10608005F2750 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7495CC21C10608005F2750 /* TodayViewController.m */; };
+		FB7495D021C10684005F2750 /* DisplayMode.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7495CF21C10684005F2750 /* DisplayMode.m */; };
+		FB7495D321C106E6005F2750 /* Linking.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7495D221C106E6005F2750 /* Linking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -358,12 +372,12 @@
 			remoteGlobalIDString = A39873CE1EA65EE60051E01A;
 			remoteInfo = "RNVectorIcons-tvOS";
 		};
-		FBFD2F5021BA930F000F0834 /* PBXContainerItemProxy */ = {
+		FB7495BA21C10417005F2750 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FBFD2F4521BA930E000F0834;
-			remoteInfo = Mywidget;
+			remoteGlobalIDString = FB7495B021C10417005F2750;
+			remoteInfo = OurWidget;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -374,7 +388,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				FBFD2F5221BA930F000F0834 /* Mywidget.appex in Embed App Extensions */,
+				FB7495BC21C10417005F2750 /* OurWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,12 +441,18 @@
 		E3B2EE36E1F84B5EBC37EF89 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		E57C9F89B35D465BA1481403 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		E9A38B54519A4D429D8AB90B /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
+		FB7495B121C10417005F2750 /* OurWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OurWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7495B421C10417005F2750 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		FB7495B721C10417005F2750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FB7495B921C10417005F2750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7495CC21C10608005F2750 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		FB7495CE21C1065A005F2750 /* DisplayMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayMode.h; sourceTree = "<group>"; };
+		FB7495CF21C10684005F2750 /* DisplayMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayMode.m; sourceTree = "<group>"; };
+		FB7495D121C106AF005F2750 /* Linking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Linking.h; sourceTree = "<group>"; };
+		FB7495D221C106E6005F2750 /* Linking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Linking.m; sourceTree = "<group>"; };
+		FB7495D421C1071F005F2750 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		FB9E881DA67146BA8B859156 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		FBFD2F4621BA930E000F0834 /* Mywidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Mywidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFD2F4721BA930F000F0834 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		FBFD2F4A21BA930F000F0834 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		FBFD2F4D21BA930F000F0834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		FBFD2F4F21BA930F000F0834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD4165AE2CB740428AF48211 /* libRNVectorIcons-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNVectorIcons-tvOS.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -491,11 +511,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBFD2F4321BA930E000F0834 /* Frameworks */ = {
+		FB7495AE21C10417005F2750 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBFD2F4821BA930F000F0834 /* NotificationCenter.framework in Frameworks */,
+				FB7495CB21C1059D005F2750 /* libReact.a in Frameworks */,
+				FB7495CA21C10594005F2750 /* libRCTAnimation.a in Frameworks */,
+				FB7495C921C1058C005F2750 /* libRCTGeolocation.a in Frameworks */,
+				FB7495C821C10586005F2750 /* libRCTImage.a in Frameworks */,
+				FB7495C721C10580005F2750 /* libRCTLinking.a in Frameworks */,
+				FB7495C621C1057A005F2750 /* libRCTNetwork.a in Frameworks */,
+				FB7495C521C10574005F2750 /* libRCTSettings.a in Frameworks */,
+				FB7495C421C1056D005F2750 /* libRCTText.a in Frameworks */,
+				FB7495C321C10568005F2750 /* libRCTVibration.a in Frameworks */,
+				FB7495C221C10561005F2750 /* libRCTWebSocket.a in Frameworks */,
+				FB7495C121C10557005F2750 /* libRCTActionSheet.a in Frameworks */,
+				FB7495B221C10417005F2750 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -703,7 +734,7 @@
 				13B07FAE1A68108700A75B9A /* Ourchat */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* OurchatTests */,
-				FBFD2F4921BA930F000F0834 /* Mywidget */,
+				FB7495B321C10417005F2750 /* OurWidget */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				5BFABF71858C44F7AB74D857 /* Resources */,
@@ -721,7 +752,7 @@
 				00E356EE1AD99517003FC87E /* OurchatTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* Ourchat-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* Ourchat-tvOSTests.xctest */,
-				FBFD2F4621BA930E000F0834 /* Mywidget.appex */,
+				FB7495B121C10417005F2750 /* OurWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -763,14 +794,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FBFD2F4921BA930F000F0834 /* Mywidget */ = {
+		FB7495B321C10417005F2750 /* OurWidget */ = {
 			isa = PBXGroup;
 			children = (
-				FBFD2F4A21BA930F000F0834 /* TodayViewController.swift */,
-				FBFD2F4C21BA930F000F0834 /* MainInterface.storyboard */,
-				FBFD2F4F21BA930F000F0834 /* Info.plist */,
+				FB7495B421C10417005F2750 /* TodayViewController.swift */,
+				FB7495B621C10417005F2750 /* MainInterface.storyboard */,
+				FB7495B921C10417005F2750 /* Info.plist */,
+				FB7495CC21C10608005F2750 /* TodayViewController.m */,
+				FB7495CE21C1065A005F2750 /* DisplayMode.h */,
+				FB7495CF21C10684005F2750 /* DisplayMode.m */,
+				FB7495D121C106AF005F2750 /* Linking.h */,
+				FB7495D221C106E6005F2750 /* Linking.m */,
+				FB7495D421C1071F005F2750 /* TodayViewController.h */,
 			);
-			path = Mywidget;
+			path = OurWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -807,7 +844,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				FBFD2F5121BA930F000F0834 /* PBXTargetDependency */,
+				FB7495BB21C10417005F2750 /* PBXTargetDependency */,
 			);
 			name = Ourchat;
 			productName = "Hello World";
@@ -850,21 +887,22 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* Ourchat-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FBFD2F4521BA930E000F0834 /* Mywidget */ = {
+		FB7495B021C10417005F2750 /* OurWidget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FBFD2F5321BA930F000F0834 /* Build configuration list for PBXNativeTarget "Mywidget" */;
+			buildConfigurationList = FB7495BD21C10417005F2750 /* Build configuration list for PBXNativeTarget "OurWidget" */;
 			buildPhases = (
-				FBFD2F4221BA930E000F0834 /* Sources */,
-				FBFD2F4321BA930E000F0834 /* Frameworks */,
-				FBFD2F4421BA930E000F0834 /* Resources */,
+				FB7495AD21C10417005F2750 /* Sources */,
+				FB7495AE21C10417005F2750 /* Frameworks */,
+				FB7495AF21C10417005F2750 /* Resources */,
+				FB7495C021C104D2005F2750 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Mywidget;
-			productName = Mywidget;
-			productReference = FBFD2F4621BA930E000F0834 /* Mywidget.appex */;
+			name = OurWidget;
+			productName = OurWidget;
+			productReference = FB7495B121C10417005F2750 /* OurWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -894,9 +932,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
-					FBFD2F4521BA930E000F0834 = {
+					FB7495B021C10417005F2750 = {
 						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = R9M86DGBNA;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -976,7 +1015,7 @@
 				00E356ED1AD99517003FC87E /* OurchatTests */,
 				2D02E47A1E0B4A5D006451C7 /* Ourchat-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* Ourchat-tvOSTests */,
-				FBFD2F4521BA930E000F0834 /* Mywidget */,
+				FB7495B021C10417005F2750 /* OurWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -1311,11 +1350,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBFD2F4421BA930E000F0834 /* Resources */ = {
+		FB7495AF21C10417005F2750 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBFD2F4E21BA930F000F0834 /* MainInterface.storyboard in Resources */,
+				FB7495B821C10417005F2750 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1349,6 +1388,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		FB7495C021C104D2005F2750 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh index.widget.js\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1387,11 +1443,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBFD2F4221BA930E000F0834 /* Sources */ = {
+		FB7495AD21C10417005F2750 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBFD2F4B21BA930F000F0834 /* TodayViewController.swift in Sources */,
+				FB7495D321C106E6005F2750 /* Linking.m in Sources */,
+				FB7495CD21C10608005F2750 /* TodayViewController.m in Sources */,
+				FB7495D021C10684005F2750 /* DisplayMode.m in Sources */,
+				FB7495B521C10417005F2750 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1408,10 +1467,10 @@
 			target = 2D02E47A1E0B4A5D006451C7 /* Ourchat-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
-		FBFD2F5121BA930F000F0834 /* PBXTargetDependency */ = {
+		FB7495BB21C10417005F2750 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FBFD2F4521BA930E000F0834 /* Mywidget */;
-			targetProxy = FBFD2F5021BA930F000F0834 /* PBXContainerItemProxy */;
+			target = FB7495B021C10417005F2750 /* OurWidget */;
+			targetProxy = FB7495BA21C10417005F2750 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1425,10 +1484,10 @@
 			path = Ourchat;
 			sourceTree = "<group>";
 		};
-		FBFD2F4C21BA930F000F0834 /* MainInterface.storyboard */ = {
+		FB7495B621C10417005F2750 /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FBFD2F4D21BA930F000F0834 /* Base */,
+				FB7495B721C10417005F2750 /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -1815,12 +1874,13 @@
 			};
 			name = Release;
 		};
-		FBFD2F5421BA930F000F0834 /* Debug */ = {
+		FB7495BE21C10417005F2750 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
@@ -1829,13 +1889,16 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = R9M86DGBNA;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = Mywidget/Info.plist;
+				INFOPLIST_FILE = OurWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.Ourchat.Mywidget;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.Ourchat.OurWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1845,12 +1908,13 @@
 			};
 			name = Debug;
 		};
-		FBFD2F5521BA930F000F0834 /* Release */ = {
+		FB7495BF21C10417005F2750 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
@@ -1860,12 +1924,15 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = R9M86DGBNA;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = Mywidget/Info.plist;
+				INFOPLIST_FILE = OurWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.Ourchat.Mywidget;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.Ourchat.OurWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1922,11 +1989,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FBFD2F5321BA930F000F0834 /* Build configuration list for PBXNativeTarget "Mywidget" */ = {
+		FB7495BD21C10417005F2750 /* Build configuration list for PBXNativeTarget "OurWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBFD2F5421BA930F000F0834 /* Debug */,
-				FBFD2F5521BA930F000F0834 /* Release */,
+				FB7495BE21C10417005F2750 /* Debug */,
+				FB7495BF21C10417005F2750 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

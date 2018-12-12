@@ -6,8 +6,14 @@
 //  Copyright © 2018 Facebook. All rights reserved.
 //
 
-#ifndef TodayViewController_h
-#define TodayViewController_h
+//#ifndef TodayViewController_h
+//#define TodayViewController_h
+//
+//
+//#endif /* TodayViewController_h */
 
+#import <UIKit/UIKit.h>
 
-#endif /* TodayViewController_h */
+@interface TodayViewController : UIViewController
+
+@end

@@ -6,8 +6,16 @@
 //  Copyright © 2018 Facebook. All rights reserved.
 //
 
-#ifndef Linking_h
-#define Linking_h
+//#ifndef Linking_h
+//#define Linking_h
+//
+//
+//#endif /* Linking_h */
+#import <React/RCTBridgeModule.h>
+#import <UIKit/UIKit.h>
 
-
-#endif /* Linking_h */
+@interface Linking : NSObject <RCTBridgeModule>
+  
+- (id)initWithContext:(NSExtensionContext*)context;
+  
+  @end
