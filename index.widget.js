@@ -1,18 +1,8 @@
 import React from "react";
-import { AppRegistry, Platform, Text, View } from "react-native";
+import { AppRegistry, Platform, Text, View, ScrollView } from "react-native";
+import AppWidget from "./src/widgets/AppWidget";
 
-const TodayWidget = () => (
-  <View
-    style={{
-      flex: 1,
-      backgroundColor: "red",
-      justifyContent: "center",
-      alignItems: "center"
-    }}
-  >
-    <Text style={{ color: "#fff", fontSize: 24 }}>Hello Today Widget!</Text>
-  </View>
-);
+const TodayWidget = () => <AppWidget />;
 
 if (Platform.OS === "ios") {
   AppRegistry.registerComponent("AITodayWidget", () => TodayWidget);
