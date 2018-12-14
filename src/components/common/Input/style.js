@@ -1,16 +1,6 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-  main: {
-    flex: 1,
-    alignItems: "center"
-  },
-  photo: {
-    width: 150,
-    height: 150,
-    marginTop: 5,
-    marginBottom: 5
-  },
   input: {
     alignItems: "center",
     marginTop: 15,

@@ -1,7 +1,7 @@
 import { SWITCH_ACTIVE_LIST, SHOW_MENU, SHOW_SETTINGS } from "./../constants";
 
 const initialState = {
-  activeList: "chats",
+  activeList: "Users",
   showMenu: false,
   showSettings: false,
   chats: [

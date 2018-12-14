@@ -1,12 +1,17 @@
 import React from "react";
+import { connect } from "react-redux";
 import { View, Text, ScrollView } from "react-native";
 import { Button, Text as CustomText } from "react-native-elements";
 import style from "./style";
 import ListElement from "./../../common/ListElement/ListElement";
 
 class Chats extends React.Component {
+  handleNavigateToChat = () => {
+    this.props.navigation.navigate("Chat");
+  };
+
   render() {
-    const { chats, onPress } = this.props;
+    const { chats = [] } = this.props;
 
     return (
       <View style={style.main}>
@@ -16,7 +21,7 @@ class Chats extends React.Component {
               key={`chat-${chat.id}`}
               chat={chat}
               photo={chat.photo}
-              onPress={onPress}
+              onPress={this.handleNavigateToChat}
             >
               <View style={style.data}>
                 <View style={style.header}>
@@ -42,4 +47,12 @@ class Chats extends React.Component {
   }
 }
 
-export default Chats;
+const mapStateToProps = state => ({
+  users: state.main.users,
+  chats: state.main.chats
+});
+
+export default connect(
+  mapStateToProps,
+  {}
+)(Chats);

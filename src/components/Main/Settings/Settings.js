@@ -1,39 +1,58 @@
 import React from "react";
-import { View, Text, Image, Animated } from "react-native";
+import { View, Image } from "react-native";
 import { Button } from "react-native-elements";
+import Input from "./../../common/Input/Input";
 import style from "./style";
 
 class Settings extends React.Component {
-  state = {
-    fadeAnim: new Animated.Value(0) // Initial value for opacity: 0
-  };
-  componentDidMount() {
-    Animated.timing(
-      // Animate over time
-      this.state.fadeAnim, // The animated value to drive
-      {
-        toValue: 1, // Animate to opacity: 1 (opaque)
-        duration: 450 // Make it take a while
-      }
-    ).start(); // Starts the animation
-  }
-
   render() {
-    let { fadeAnim } = this.state;
-
     return (
-      <Animated.View
-        style={{ ...this.props.style, ...style.main, opacity: fadeAnim }}
-      >
-        <View style={style.closeSettings}>
+      <View style={style.main}>
+        {/* TODO: */}
+        {/* Photo image */}
+        <Image
+          style={style.photo}
+          source={require("./../../../../img/photo.png")}
+        />
+        {/* Phone number input */}
+        <Input
+          title="Phone"
+          placeholder="+79607770000"
+          value=""
+          onChangeText={() => {}}
+        />
+
+        <Input
+          title="Login"
+          placeholder="input login"
+          value=""
+          onChangeText={() => {}}
+        />
+
+        <Input
+          title="Chat name"
+          placeholder="input chatname"
+          value=""
+          onChangeText={() => {}}
+        />
+
+        <View
+          style={{
+            flex: 1,
+            justifyContent: "center"
+          }}
+        >
           <Button
-            title="Close"
-            icon={{ name: "times", type: "font-awesome" }}
-            buttonStyle={{}}
-            onPress={this.props.handleOpenSettings}
+            title="Logout"
+            buttonStyle={{
+              width: 150,
+              height: 50
+            }}
+            icon={{ name: "sign-out", type: "font-awesome", color: "white" }}
+            onPress={() => {}}
           />
         </View>
-      </Animated.View>
+      </View>
     );
   }
 }

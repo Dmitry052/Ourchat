@@ -42,6 +42,22 @@ const initialState = {
       id: 7,
       type: "me",
       message: "dnjssndvdn n injn fein weiu win wi nw"
+    },
+    {
+      id: 8,
+      type: "i",
+      message:
+        "nvwoenoewnvwmvwoeinm oiewn oeiwnowien owin wegoign woien weo gjingiw n"
+    },
+    {
+      id: 9,
+      type: "me",
+      message: "niwngwengwiengweoin n oqwbn gqueyb gewub ewbu iweu biwueb"
+    },
+    {
+      id: 10,
+      type: "me",
+      message: "dnjssndvdn n injn fein weiu win wi nw"
     }
   ]
 };

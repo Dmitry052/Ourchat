@@ -22,6 +22,11 @@ class Chat extends React.Component {
             inverted
             data={this.props.dataChat}
             keyExtractor={this.keyExtractor}
+
+            onScrollEndDrag={() => console.log("end")}
+            onScrollBeginDrag={() => console.log("start")}
+            onScroll={() => console.log("end")}
+
             renderItem={({ item }) => (
               <View
                 style={
