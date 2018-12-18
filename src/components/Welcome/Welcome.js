@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image } from "react-native";
+import { View, Image, NativeModules } from "react-native";
 import { Button, Text } from "react-native-elements";
 import * as Keychain from "react-native-keychain";
 import style from "./style";
@@ -8,9 +8,15 @@ class Welcome extends React.Component {
   async componentDidMount() {
     const username = "krench";
     const uuid = "ee878b05-54bd-46fb-931b-7ab844647ca4";
-    await Keychain.setInternetCredentials("test", username, uuid);
+    // await Keychain.setInternetCredentials("test", username, uuid);
     console.log("Good");
+
+    NativeModules.TestExample.show("sdfdsfdsfsdfsd", this.showResult)
   }
+
+  showResult = async message => {
+    console.log("message", message);
+  };
 
   render() {
     return (

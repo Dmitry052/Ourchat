@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09C"
+    android:padding="@dimen/widget_margin">
+
+
+    <TextView
+        android:id="@+id/pair"
+        android:layout_width="62.5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#09C"
+        android:contentDescription="@string/appwidget_text"
+        android:text="@string/appwidget_text"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="62.5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:background="#09C"
+        android:contentDescription="@string/appwidget_text"
+        android:text="@string/appwidget_text"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profit"
+        android:layout_width="62.5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="10dp"
+        android:background="#09C"
+        android:contentDescription="@string/appwidget_text"
+        android:text="@string/appwidget_text"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="62.5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="10dp"
+        android:background="#09C"
+        android:contentDescription="@string/appwidget_text"
+        android:text="@string/appwidget_text"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <!--*******************************-->
+
+    <TextView
+        android:id="@+id/pairValue1"
+        android:layout_width="62.5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:background="#09C"
+        android:contentDescription="@string/appwidget_text"
+        android:text="BTC/ETH"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="" />
+
+    <TextView
+        android:id="@+id/rateValue1"
+        android:layout_width="62.5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:background="#09C"
+        android:contentDescription="@string/appwidget_text"
+        android:text="1.2"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="" />
+
+    <TextView
+        android:id="@+id/profitValue1"
+        android:layout_width="62.5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="40dp"
+        android:background="#09C"
+        android:contentDescription="@string/appwidget_text"
+        android:text="+$300"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="" />
+
+    <TextView
+        android:id="@+id/valueValue1"
+        android:layout_width="62.5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="40dp"
+        android:background="#09C"
+        android:contentDescription="@string/appwidget_text"
+        android:text="$2389.39"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="" />
+
+</RelativeLayout>
