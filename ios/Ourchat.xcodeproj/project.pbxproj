@@ -75,6 +75,8 @@
 		FB7495CD21C10608005F2750 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7495CC21C10608005F2750 /* TodayViewController.m */; };
 		FB7495D021C10684005F2750 /* DisplayMode.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7495CF21C10684005F2750 /* DisplayMode.m */; };
 		FB7495D321C106E6005F2750 /* Linking.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7495D221C106E6005F2750 /* Linking.m */; };
+		FB87945021C8E9BC00588F5E /* libRNKeychain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB87944B21C8E98600588F5E /* libRNKeychain.a */; };
+		FB87945121C8EA3900588F5E /* libRNKeychain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB87944B21C8E98600588F5E /* libRNKeychain.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -379,6 +381,20 @@
 			remoteGlobalIDString = FB7495B021C10417005F2750;
 			remoteInfo = OurWidget;
 		};
+		FB87944A21C8E98600588F5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB87941F21C8E98500588F5E /* RNKeychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D82366F1B0CE05B005A9EF3;
+			remoteInfo = RNKeychain;
+		};
+		FB87944C21C8E98600588F5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB87941F21C8E98500588F5E /* RNKeychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6478985F1F38BF9100DA1C12;
+			remoteInfo = "RNKeychain-tvOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -451,6 +467,9 @@
 		FB7495D121C106AF005F2750 /* Linking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Linking.h; sourceTree = "<group>"; };
 		FB7495D221C106E6005F2750 /* Linking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Linking.m; sourceTree = "<group>"; };
 		FB7495D421C1071F005F2750 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		FB87941F21C8E98500588F5E /* RNKeychain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNKeychain.xcodeproj; path = "../node_modules/react-native-keychain/RNKeychain.xcodeproj"; sourceTree = "<group>"; };
+		FB87945421C8EBE800588F5E /* Ourchat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Ourchat.entitlements; path = Ourchat/Ourchat.entitlements; sourceTree = "<group>"; };
+		FB87945521C8F19700588F5E /* OurWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OurWidget.entitlements; sourceTree = "<group>"; };
 		FB9E881DA67146BA8B859156 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		FBFD2F4721BA930F000F0834 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		FD4165AE2CB740428AF48211 /* libRNVectorIcons-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNVectorIcons-tvOS.a"; sourceTree = "<group>"; };
@@ -469,6 +488,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB87945021C8E9BC00588F5E /* libRNKeychain.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -515,6 +535,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB87945121C8EA3900588F5E /* libRNKeychain.a in Frameworks */,
 				FB7495CB21C1059D005F2750 /* libReact.a in Frameworks */,
 				FB7495CA21C10594005F2750 /* libRCTAnimation.a in Frameworks */,
 				FB7495C921C1058C005F2750 /* libRCTGeolocation.a in Frameworks */,
@@ -615,6 +636,7 @@
 		13B07FAE1A68108700A75B9A /* Ourchat */ = {
 			isa = PBXGroup;
 			children = (
+				FB87945421C8EBE800588F5E /* Ourchat.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -701,6 +723,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				FB87941F21C8E98500588F5E /* RNKeychain.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -797,6 +820,7 @@
 		FB7495B321C10417005F2750 /* OurWidget */ = {
 			isa = PBXGroup;
 			children = (
+				FB87945521C8F19700588F5E /* OurWidget.entitlements */,
 				FB7495B421C10417005F2750 /* TodayViewController.swift */,
 				FB7495B621C10417005F2750 /* MainInterface.storyboard */,
 				FB7495B921C10417005F2750 /* Info.plist */,
@@ -808,6 +832,15 @@
 				FB7495D421C1071F005F2750 /* TodayViewController.h */,
 			);
 			path = OurWidget;
+			sourceTree = "<group>";
+		};
+		FB87942021C8E98500588F5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB87944B21C8E98600588F5E /* libRNKeychain.a */,
+				FB87944D21C8E98600588F5E /* libRNKeychain.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -922,6 +955,14 @@
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = R9M86DGBNA;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -937,6 +978,11 @@
 						DevelopmentTeam = R9M86DGBNA;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -1003,6 +1049,10 @@
 				{
 					ProductGroup = FB28516921B963F0002923EA /* Products */;
 					ProjectRef = 5FB3CA816F8A4924BEF605A6 /* RNGestureHandler.xcodeproj */;
+				},
+				{
+					ProductGroup = FB87942021C8E98500588F5E /* Products */;
+					ProjectRef = FB87941F21C8E98500588F5E /* RNKeychain.xcodeproj */;
 				},
 				{
 					ProductGroup = FB28516B21B963F0002923EA /* Products */;
@@ -1301,6 +1351,20 @@
 			remoteRef = FB28517421B963F0002923EA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		FB87944B21C8E98600588F5E /* libRNKeychain.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNKeychain.a;
+			remoteRef = FB87944A21C8E98600588F5E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FB87944D21C8E98600588F5E /* libRNKeychain.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNKeychain.a;
+			remoteRef = FB87944C21C8E98600588F5E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1565,6 +1629,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ourchat/Ourchat.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1596,6 +1661,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ourchat/Ourchat.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1884,6 +1950,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = OurWidget/OurWidget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1918,6 +1985,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = OurWidget/OurWidget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;

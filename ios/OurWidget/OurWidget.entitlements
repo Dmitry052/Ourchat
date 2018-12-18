@@ -5,6 +5,7 @@
 	<key>keychain-access-groups</key>
 	<array>
 		<string>$(AppIdentifierPrefix)org.reactjs.native.example.Ourchat.OurWidget</string>
+		<string>$(AppIdentifierPrefix)org.reactjs.native.example.Ourchat</string>
 	</array>
 </dict>
 </plist>

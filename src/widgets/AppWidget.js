@@ -1,9 +1,42 @@
 import React from "react";
-import { Text, View, Image } from "react-native";
+import { Text, View, Image, Button } from "react-native";
 import { setExpandable } from "react-native-today-widget";
+import * as Keychain from "react-native-keychain";
 import style from "./style";
 
 class AppWidget extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      value: "none"
+    };
+  }
+
+  async componentDidMount() {
+    try {
+      const value = Keychain.getInternetCredentials("test");
+
+      value
+        .then(res => {
+          this.setState({
+            value: res.username
+          });
+        })
+        .catch(err => {
+          this.setState({
+            value: `${JSON.stringify(err)}`
+          });
+        });
+    } catch (err) {
+      this.setState({
+        value: err.toString()
+      });
+    }
+  }
+
+  getKeyChain = async () => {};
+
   render() {
     const isExpandable = true;
     const maxHeight = 200;
@@ -18,6 +51,7 @@ class AppWidget extends React.Component {
         console.log("widget is in expanded mode");
       }
     };
+
     return (
       <View
         onLayout={onLayout}
@@ -29,13 +63,26 @@ class AppWidget extends React.Component {
       >
         <View
           style={{
-            backgroundColor: "green",
+            backgroundColor: "blue",
             width: "33.333%",
             flexDirection: "column",
             alignItems: "center"
           }}
         >
           <Text style={{ fontSize: 16, marginBottom: 5 }}>column_1</Text>
+        </View>
+
+        <View
+          style={{
+            backgroundColor: "green",
+            width: "33.333%",
+            flexDirection: "column",
+            alignItems: "center"
+          }}
+        >
+          <Text style={{ fontSize: 16, marginBottom: 5 }}>
+            {`Username from keychain -> '${this.state.value}'`}
+          </Text>
         </View>
 
         <View
