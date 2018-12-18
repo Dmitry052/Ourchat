@@ -11,7 +11,9 @@ class Welcome extends React.Component {
     // await Keychain.setInternetCredentials("test", username, uuid);
     console.log("Good");
 
-    NativeModules.TestExample.show("sdfdsfdsfsdfsd", this.showResult)
+    NativeModules.TestExample.show("Custom text", this.showResult);
+    NativeModules.TestExample.get(this.showResult);
+    NativeModules.TestExample.set(this.showResult);
   }
 
   showResult = async message => {

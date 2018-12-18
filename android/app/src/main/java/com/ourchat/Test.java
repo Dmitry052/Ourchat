@@ -7,6 +7,8 @@ import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
+import com.ourchat.OurChatWidget;
+
 public class Test extends ReactContextBaseJavaModule {
 
     public Test(ReactApplicationContext reactContext) {
@@ -24,13 +26,13 @@ public class Test extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public String get() {
-        return "Method GET from JAVA";
+    public void get(Callback checkMessage) {
+        checkMessage.invoke("Method GET from JAVA");
     }
 
     @ReactMethod
-    public String set() {
-        return "Method SET from JAVA";
+    public void set(Callback checkMessage) {
+        checkMessage.invoke("Method SET from JAVA");
     }
 
 
